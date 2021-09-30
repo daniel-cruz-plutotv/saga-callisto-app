@@ -1,0 +1,18 @@
+.o-badge {
+  border: 1px solid $primary;
+  border-radius: 5px;
+  color: $primary;
+  cursor: pointer;
+  transition: 0.2s;
+  &__text {
+    text-align: center;
+  }
+  &:hover {
+    color: $font-color;
+    background: $primary;
+  }
+  &--active {
+    color: $font-color;
+    background: $primary;
+  }
+}

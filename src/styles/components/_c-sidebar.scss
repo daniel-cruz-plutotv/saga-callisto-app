@@ -1,0 +1,38 @@
+.c-sidebar {
+  grid-area: sidebar;
+  border-right: 1px solid $soft-background;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 5rem 3rem auto;
+  grid-template-areas:
+    "title"
+    "nameForm"
+    "type"
+    "typeContent"
+  ;
+  &__title {
+    grid-area: title;
+  }
+
+  &__name-input {
+    grid-area: nameForm
+  }
+
+  &__filters {
+    grid-area: type;
+  }
+
+  &__filters-options {
+    grid-area: typeContent;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+  }
+
+  &__filters_option {
+    width: 6rem;
+    max-width: 6rem;
+    padding: 5px;
+  }
+}

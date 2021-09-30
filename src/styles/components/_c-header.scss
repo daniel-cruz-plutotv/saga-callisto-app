@@ -1,0 +1,9 @@
+.c-header {
+  grid-area: header;
+  background: $primary;
+  height: 3rem;
+  &__title {
+    line-height: 3rem;
+    text-align: center;
+  }
+}

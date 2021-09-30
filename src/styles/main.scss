@@ -1,0 +1,20 @@
+// SETTINGS - css variables
+@import './settings/main.scss';
+
+// TOOLS - functions and mixins
+@import './tools/main.scss';
+
+// GENERIC - generic code or global styles
+@import './generic/main.scss';
+
+// TAGS - html tags and keyframes
+@import './tags/main.scss';
+
+// OBJECTS - objects like buttons, forms, inputs, etc
+@import './objects/main.scss';
+
+// COMPONENTS - bem blocks
+@import './components/main.scss';
+
+// UTILITIES - !important properties
+@import './utilities/main.scss';

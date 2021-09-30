@@ -1,0 +1,33 @@
+$grid-large-columns: repeat(6, 1fr);
+$grid-large-rows: 3rem repeat(4, 1fr) 3rem;
+
+$grid-medium-columns: repeat(6, 1fr);
+$grid-medium-rows: 3rem repeat(4, 1fr) 3rem;
+
+$grid-small-columns: repeat(6, 1fr);
+$grid-small-rows: 3rem repeat(4, 1fr) 3rem;
+
+$grid-large-template: 
+  "header header header header header header"
+  "sidebar sidebar main main main main"
+  "sidebar sidebar main main main main"
+  "sidebar sidebar main main main main"
+  "sidebar sidebar main main main main"
+  "footer footer footer footer footer footer"
+;
+$grid-medium-template: 
+  "header header header header header header"
+  "sidebar sidebar main main main main"
+  "sidebar sidebar main main main main"
+  "sidebar sidebar main main main main"
+  "sidebar sidebar main main main main"
+  "footer footer footer footer footer footer"
+;
+$grid-small-template: 
+"header header header header header header"
+"sidebar sidebar sidebar main main main"
+"sidebar sidebar sidebar main main main"
+"sidebar sidebar sidebar main main main"
+"sidebar sidebar sidebar main main main"
+"footer footer footer footer footer footer"
+;

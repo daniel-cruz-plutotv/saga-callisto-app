@@ -1,0 +1,9 @@
+.o-type {
+  border: 1px solid $primary;
+  border-radius: 5px;
+  color: $primary;
+  transition: 0.2s;
+  &__text {
+    text-align: center;
+  }
+}

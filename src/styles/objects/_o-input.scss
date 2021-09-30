@@ -1,0 +1,43 @@
+.o-input {
+  position: relative;
+  width: 95%;
+  &__text {
+    position: relative;
+    display: block;
+    background: none;
+    color: $font-color;
+    outline: none;
+    border: none;
+    padding: 10px 10px 10px 5px;
+    border-bottom: 1px solid $primary;
+    font-family: inherit;
+  }
+  &__label {
+    position: absolute;
+    color: $soft-font-color;
+    left: 5px;
+    top: 10px;
+    pointer-events: none;
+    transition: 0.5s transform, color 0.3s;
+  }
+  &__bar {
+    position: absolute;
+    border-bottom: 1px solid $primary;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scale(0);
+    transition: 0.3s transform;
+    transform-origin: left bottom;
+  }
+  &__text ~ &__bar {
+    transform: scale(1);
+  }
+  &__text:focus + &__label,
+  &__text:not(:placeholder-shown) + .form__label {
+    color: $primary;
+    transform: scale(0.7) translateY(-34px);
+    transform-origin: top left;
+  }
+}
