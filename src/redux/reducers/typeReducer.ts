@@ -25,6 +25,9 @@ const typeReducer = ( state = initial_state, action: any ) => {
         types: [...state.types, action.payload]
       }
     }
+    case typeTypes.CLEAN_TYPES: {
+      return initial_state;
+    }
     default: {
       return state;
     }

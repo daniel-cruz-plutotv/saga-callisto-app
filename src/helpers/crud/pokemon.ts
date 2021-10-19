@@ -5,8 +5,8 @@ import { parsePokemonData } from '../parsing/pokemonParse';
 const path = '/pokemon';
 
 // GET FUNCTION
-export const getPokemons = async () => {
-  const resp = await getRequest(path);
+export const getPokemons: any = async (offset:number) => {
+  const resp = await getRequest(`${path}?offset=${offset}`);
   const pokemons = getPokemonsClear(resp);
   return pokemons;
 }

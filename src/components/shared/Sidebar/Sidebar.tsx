@@ -6,6 +6,7 @@ import TextInput from '../../general/TextInput/TextInput';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../redux/reducers';
 import Type from '../../general/Type/Type';
+import { Buttons } from './Buttons';
 
 const Sidebar: React.FC = () => {
 
@@ -32,6 +33,7 @@ const Sidebar: React.FC = () => {
           ))
         }
       </div>
+      <Buttons/>
     </aside>
   );
 };
